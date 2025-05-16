@@ -48,7 +48,11 @@ export function FlashcardSetManager() {
     } else {
       // Create the new set and force a UI refresh
       const newSet = addFlashcardSet({ name: newSetName });
-      toast({ title: "Set Created", description: `Set "${newSetName}" has been created.` });
+      toast({
+        title: "Set Created",
+        description: `Set "${newSetName}" has been created. Please 'Refresh' to view changes.`,
+        className: "bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20"
+      });
 
       // Force a re-render by setting a state
       setForceRefresh(prev => prev + 1);
@@ -423,7 +427,7 @@ export function FlashcardSetManager() {
                     </CardHeader>
 
                     <CardContent className="flex-grow relative">
-                      <div className="flex items-center mb-3 bg-primary/5 px-3 py-1.5 rounded-full inline-flex">
+                      <div className="flex items-center mb-3 bg-primary/5 px-3 py-1.5 rounded-full">
                         <div className="h-2 w-2 rounded-full bg-primary mr-2 animate-pulse-slow"></div>
                         <p className="text-sm font-medium">{cardsInSet.length} card{cardsInSet.length !== 1 ? 's' : ''}</p>
                       </div>

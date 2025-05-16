@@ -118,7 +118,11 @@ export function AIGeneratorForm() {
       form.setValue("setId", newSet.id);
 
       // Show success message
-      toast({ title: "Set Created", description: `Set "${setName}" has been created.` });
+      toast({
+        title: "Set Created",
+        description: `Set "${setName}" has been created. Please 'Refresh' to view changes.`,
+        className: "bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20"
+      });
 
       // Force a refresh to ensure the UI updates
       setForceRefresh(prev => prev + 1);
