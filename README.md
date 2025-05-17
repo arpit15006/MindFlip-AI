@@ -128,4 +128,4 @@ Made with 💙 by Arpit Patel
 
 ## 🌐 Live Demo
 
-Check it out live: [Vercel Deployed Link](mind-flip-ai.vercel.app)
+Check it out live: [Vercel Deployed Link](https://mind-flip-ai.vercel.app)
