@@ -122,7 +122,7 @@ npm run dev
 ```bash
 npm run build
 ```
-## 🤝 Credits
+## 🤝 Developer
 
 Made with 💙 by Arpit Patel
 
