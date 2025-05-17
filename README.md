@@ -1,7 +1,7 @@
 # 🧠 MindFlip — AI-Powered Flashcard Learning Game
 
 MindFlip is an AI-driven flashcard app that transforms the way students learn. With smart repetition, elegant UI, and smooth flow, it’s designed to help users remember better — faster.
-![MindFlip-AI Logo](src/app/logo.jpg)
+![MindFlip-AI Logo](src/app/logo.jpeg)
 ---
 
 ## ✨ Features
