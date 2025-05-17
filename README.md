@@ -53,22 +53,22 @@ MindFlip is an AI-driven flashcard app that transforms the way students learn. W
 
 ## 📸 Screenshots
 | Onboarding View |
-(src/app/s1.png)
+![Onboarding view](src/app/s1.png)
 
 | Flashcardset view |
-(src/app/s2.png)
+![Flashcardset view](src/app/s2.png)
 
 | AI Generator view |
-(src/app/s3.png)
+![AI Generator view](src/app/s3.png)
 
 | Cards view |
-(src/app/s4.png)
+![Cards view](src/app/s4.png)
 
 | Statistics view |
-(src/app/s5.png)
+![Statistics view](src/app/s5.png)
 
 |Profile view |
-(src/app/s6.png)
+![Profile view](src/app/s6.png)
 
 ---
 
@@ -128,4 +128,4 @@ Made with 💙 by Arpit Patel
 
 ## 🌐 Live Demo
 
-Check it out live: [https://your-live-demo-link.com](https://your-live-demo-link.com)
+Check it out live: [Vercel Deployed Link](mind-flip-ai.vercel.app)
