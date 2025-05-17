@@ -1,92 +1,114 @@
-# MindFlip – Interactive Flashcard Learning Platform
+# 🧠 MindFlip — AI-Powered Flashcard Learning Game
 
-![MindFlip Logo](https://placehold.co/600x200/46A7B3/FFFFFF/png?text=MindFlip&font=montserrat)
+MindFlip is an AI-driven flashcard app that transforms the way students learn. With smart repetition, elegant UI, and smooth flow, it’s designed to help users remember better — faster.
+![MindFlip-AI Logo](src/app/logo.jpg)
+---
 
-MindFlip is a modern, visually stunning flashcard application designed to make learning engaging and effective. With an immersive canvas-like UI, spaced repetition, and gamification elements, MindFlip transforms traditional flashcards into an interactive learning experience.
+## ✨ Features
 
-## 🏆 Hackathon Submission
+- 🎴 Flip-based flashcards with “Know” / “Don’t Know” interaction
+- 🧠 Smart repetition engine powered by AI to boost long-term retention
+- 📊 Real-time performance tracking and review insights
+- 🔁 Re-attempt incorrect cards until mastery is achieved
+- 🌙 Beautiful dark mode support with modern animations
+- 📱 Fully responsive across mobile, tablet, and desktop
 
-This project was created for the Flashcard Learning Platform Hackathon to demonstrate innovative approaches to learning tools with modern web technologies.
+---
 
-### Key Innovations
+## 🔍 Criteria Alignment
 
-- Canvas-like UI with animated elements for an engaging experience
-- Spaced repetition algorithm to optimize learning efficiency
-- Gamification elements to increase motivation and engagement
-- Responsive design that works across all devices
+### 🧭 User Experience
+- Clear navigation and intuitive card flipping
+- Minimal learning curve — instant understanding of how to play
+- Fast feedback loop with satisfying animations and response time
 
-## 🌟 Features
+### 🎨 Visual Design
+- Clean layout with consistent spacing and color system
+- Modern aesthetics: gradients, glassmorphism, and subtle shadows
+- Fully responsive layout with smooth transitions
 
-- **Beautiful Canvas-like Interface**: Immersive design with smooth animations, particles, and gradient effects
-- **Flashcard Management**: Create, edit, and organize flashcards in collections
-- **Multiple Study Modes**: Sequential, shuffle, and spaced repetition learning
-- **Gamification**: XP system, levels, badges, and streaks to keep you motivated
-- **Progress Tracking**: Statistics to visualize your learning journey
-- **Dark/Light Mode**: Beautiful themes for any environment
-- **Responsive Design**: Works perfectly on mobile, tablet, and desktop
+### ⚙️ Functionality
+- No broken UI or logical flow — every feature works as intended
+- State tracking for learning progress and retry logic
+- Adaptive review deck based on user input
 
-## 🚀 Getting Started
+### 🧼 Code Quality
+- Organized React codebase using components and hooks
+- Tailwind CSS utility-first styling for clean implementation
+- Reusable logic modules and consistent naming conventions
 
-### Prerequisites
+---
 
-- Node.js 18+
-- npm or yarn
+## 🚀 Tech Stack
 
-### Installation
+- **Frontend**: React + Vite
+- **Styling**: Tailwind CSS + Framer Motion
+- **State Management**: Zustand or Context API
+- **AI Logic**: Custom spaced repetition engine
+- **Deployment**: Vercel
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/mindflip.git
-   cd mindflip
-   ```
+---
 
-2. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
+## 📸 Screenshots
 
-3. Start the development server:
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
+<!-- Add actual screenshots here -->
+| Flashcard View | Stats View | Adaptive Review |
+|----------------|------------|------------------|
+| ![Flashcard](./screenshots/flashcard.png) | ![Stats](./screenshots/stats.png) | ![Adaptive](./screenshots/adaptive.png) |
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+---
 
-## 📱 Screenshots
+## 📂 Folder Structure
 
-### Desktop View
-![Desktop Screenshot](https://placehold.co/800x450/46A7B3/FFFFFF/png?text=MindFlip+Desktop&font=montserrat)
+```
+MindFlip-AI/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── hooks/
+│   ├── pages/
+│   ├── styles/
+│   └── App.tsx
+├── tailwind.config.js
+├── vite.config.ts
+└── README.md
+```
 
-### Mobile View
-![Mobile Screenshot](https://placehold.co/300x600/46A7B3/FFFFFF/png?text=MindFlip+Mobile&font=montserrat)
+---
 
-## 🧠 How It Works
+## 🛠️ Getting Started
 
-1. **Create Flashcard Sets**: Organize your learning materials into sets
-2. **Add Flashcards**: Create cards with front (question) and back (answer) content
-3. **Study and Review**: Use different study modes including sequential, shuffle, and spaced repetition
-4. **Track Progress**: Monitor your learning with statistics and visual feedback
-5. **Earn Rewards**: Level up and earn badges as you learn
+To run this project locally:
 
-## 🛠️ Technologies Used
+### 1. Clone the repository
 
-- **Frontend**: React, Next.js, TypeScript
-- **Styling**: Tailwind CSS, Framer Motion for animations
-- **State Management**: Zustand, React Context
-- **Form Handling**: React Hook Form, Zod validation
-- **UI Components**: Radix UI, Shadcn UI
+```bash
+git clone https://github.com/yourusername/MindFlip-AI.git
+cd MindFlip-AI
+```
 
-## 📝 License
+### 2. Install dependencies
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+```bash
+npm install
+```
 
-## 🙏 Acknowledgments
+### 3. Start the development server
 
-- [ShadCN UI](https://ui.shadcn.com/) for the beautiful UI components
-- [Lucide Icons](https://lucide.dev/) for the icon set
-- [Framer Motion](https://www.framer.com/motion/) for animations
-- [Tailwind CSS](https://tailwindcss.com/) for styling
+```bash
+npm run dev
+```
+
+### 4. Build for production
+
+```bash
+npm run build
+```
+## 🤝 Credits
+
+Made with 💙 by [Arpit Patel]
+
+## 🌐 Live Demo
+
+Check it out live: [https://your-live-demo-link.com](https://your-live-demo-link.com)
