@@ -1,7 +1,9 @@
 # 🧠 MindFlip — AI-Powered Flashcard Learning Game
 
 MindFlip is an AI-driven flashcard app that transforms the way students learn. With smart repetition, elegant UI, and smooth flow, it’s designed to help users remember better — faster.
+
 ![MindFlip-AI Logo](src/app/logo.jpeg)
+
 ---
 
 ## ✨ Features
@@ -50,11 +52,23 @@ MindFlip is an AI-driven flashcard app that transforms the way students learn. W
 ---
 
 ## 📸 Screenshots
+| Onboarding View |
+(src/app/s1.png)
 
-<!-- Add actual screenshots here -->
-| Flashcard View | Stats View | Adaptive Review |
-|----------------|------------|------------------|
-| ![Flashcard](./screenshots/flashcard.png) | ![Stats](./screenshots/stats.png) | ![Adaptive](./screenshots/adaptive.png) |
+| Flashcardset view |
+(src/app/s2.png)
+
+| AI Generator view |
+(src/app/s3.png)
+
+| Cards view |
+(src/app/s4.png)
+
+| Statistics view |
+(src/app/s5.png)
+
+|Profile view |
+(src/app/s6.png)
 
 ---
 
@@ -62,17 +76,20 @@ MindFlip is an AI-driven flashcard app that transforms the way students learn. W
 
 ```
 MindFlip-AI/
-├── public/
 ├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── hooks/
-│   ├── pages/
-│   ├── styles/
-│   └── App.tsx
-├── tailwind.config.js
-├── vite.config.ts
-└── README.md
+│   ├── ai/               # AI-related logic
+│   ├── app/              # Main App pages
+│   ├── components/       # Reusable UI components
+│   ├── contexts/         # Context providers
+│   ├── hooks/            # Custom React hooks
+│   ├── lib/              # Utility functions
+│   └── store/            # Global store setup
+├── tailwind.config.ts
+├── next.config.js / .ts
+├── vercel.json
+├── package.json
+├── README.md
+└── tsconfig.json
 ```
 
 ---
@@ -84,7 +101,7 @@ To run this project locally:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/MindFlip-AI.git
+git clone https://github.com/arpit15006/MindFlip-AI.git
 cd MindFlip-AI
 ```
 
@@ -107,7 +124,7 @@ npm run build
 ```
 ## 🤝 Credits
 
-Made with 💙 by [Arpit Patel]
+Made with 💙 by Arpit Patel
 
 ## 🌐 Live Demo
 
