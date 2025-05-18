@@ -129,3 +129,7 @@ Made with 💙 by Arpit Patel
 ## 🌐 Live Demo
 
 Check it out live: [Vercel Deployed Link](https://mind-flip-ai.vercel.app)
+
+## Special Credit 🙏🏻
+
+Google for Gemini API
