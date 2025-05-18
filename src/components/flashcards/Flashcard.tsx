@@ -1,4 +1,3 @@
-
 "use client";
 import type { HTMLAttributes } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
@@ -37,29 +36,30 @@ export function Flashcard({ frontContent, backContent, isFlipped, className, sta
         />
       )}
 
-      {/* Front of card */}
-      <Card
-        className={cn(
-          "absolute inset-0 w-full h-full glassmorphism-intense transition-opacity duration-300",
-          isFlipped ? "opacity-0 pointer-events-none" : "opacity-100"
-        )}
+      {/* 3D Flip Container */}
+      <div
+        className="relative w-full h-full preserve-3d transition-all duration-500"
+        style={{ transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)' }}
       >
-        <CardContent className="flex items-center justify-center h-full p-6 text-center">
-          <div className="text-xl md:text-2xl font-medium">{frontContent}</div>
-        </CardContent>
-      </Card>
+        {/* Front of card */}
+        <Card
+          className="absolute inset-0 w-full h-full glassmorphism-intense backface-hidden rounded-lg"
+        >
+          <CardContent className="flex items-center justify-center h-full p-6 text-center">
+            <div className="text-xl md:text-2xl font-medium">{frontContent}</div>
+          </CardContent>
+        </Card>
 
-      {/* Back of card */}
-      <Card
-        className={cn(
-          "absolute inset-0 w-full h-full glassmorphism-intense transition-opacity duration-300",
-          isFlipped ? "opacity-100" : "opacity-0 pointer-events-none"
-        )}
-      >
-        <CardContent className="flex items-center justify-center h-full p-6 text-center">
-          <div className="text-lg md:text-xl">{backContent}</div>
-        </CardContent>
-      </Card>
+        {/* Back of card */}
+        <Card
+          className="absolute inset-0 w-full h-full glassmorphism-intense backface-hidden rounded-lg"
+          style={{ transform: 'rotateY(180deg)' }}
+        >
+          <CardContent className="flex items-center justify-center h-full p-6 text-center">
+            <div className="text-lg md:text-xl">{backContent}</div>
+          </CardContent>
+        </Card>
+      </div>
 
       {/* Decorative elements for visual appeal */}
       <div className="absolute -inset-0.5 bg-gradient-cosmic rounded-lg opacity-20 blur-sm -z-10"></div>
