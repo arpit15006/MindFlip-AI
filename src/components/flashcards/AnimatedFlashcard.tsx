@@ -105,13 +105,15 @@ export function AnimatedFlashcard({
         />
       )}
 
-      {/* Using a simpler approach with CSS transitions instead of 3D transforms */}
-      <div className="relative w-full h-full overflow-hidden rounded-lg">
+      {/* Using 3D transforms for a proper flip animation */}
+      <motion.div
+        className="relative w-full h-full preserve-3d"
+        animate={{ rotateY: isFlipped ? 180 : 0 }}
+        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+      >
+        {/* Front of card */}
         <Card
-          className={cn(
-            "absolute inset-0 w-full h-full glassmorphism-intense bg-card transition-opacity duration-300",
-            isFlipped ? "opacity-0" : "opacity-100"
-          )}
+          className="absolute inset-0 w-full h-full glassmorphism-intense bg-card backface-hidden rounded-lg"
         >
           <CardContent className="flex items-center justify-center h-full p-6 text-center overflow-auto">
             <motion.div
@@ -125,11 +127,10 @@ export function AnimatedFlashcard({
           </CardContent>
         </Card>
 
+        {/* Back of card */}
         <Card
-          className={cn(
-            "absolute inset-0 w-full h-full glassmorphism-intense bg-card transition-opacity duration-300",
-            isFlipped ? "opacity-100" : "opacity-0"
-          )}
+          className="absolute inset-0 w-full h-full glassmorphism-intense bg-card backface-hidden rounded-lg"
+          style={{ transform: 'rotateY(180deg)' }}
         >
           <CardContent className="flex items-center justify-center h-full p-6 text-center overflow-auto">
             <motion.div
@@ -142,7 +143,7 @@ export function AnimatedFlashcard({
             </motion.div>
           </CardContent>
         </Card>
-      </div>
+      </motion.div>
     </motion.div>
   );
 }
