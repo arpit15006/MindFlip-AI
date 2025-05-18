@@ -1,4 +1,3 @@
-
 // Using 'use client' for context and hooks that interact with localStorage
 "use client";
 import type { ReactNode } from 'react';
@@ -171,7 +170,14 @@ export function AppDataProvider({ children }: { children: ReactNode }) {
   const importData = (importedData: AppData) => {
     // Basic validation could be added here
     if (importedData && importedData.flashcardSets && importedData.flashcards && importedData.stats) {
-      setData(importedData);
+      console.log("Importing data with:", {
+        sets: importedData.flashcardSets.length,
+        cards: importedData.flashcards.length
+      });
+
+      // Create a deep copy to ensure all references are updated
+      const dataCopy = JSON.parse(JSON.stringify(importedData));
+      setData(dataCopy);
     } else {
       console.error("Imported data is not in the expected format.");
       // Potentially show a toast notification for error
